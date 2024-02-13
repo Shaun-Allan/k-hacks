@@ -10,7 +10,7 @@ const About = () => {
           navigate("/");
         }}
       >
-        Home
+        Home Page
       </button>
     </>
   );
