@@ -6,7 +6,7 @@
 
 .content{
     background-color: rgb(242, 251, 250);
-    height: calc(100vh - 102px);
+    min-height: calc(100vh - 102px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -29,12 +29,12 @@
     font-family: 'Segoe UI';
     font-size: 17px;
     line-height: 1.7rem;
+    margin-top: 1rem;
 }
 
 .localButton{
     font-size: 20px;
     font-weight: 700;
-    box-sizing: border-box;
     height: fit-content;
     background-color: rgb(7, 42, 71);
     color: white;
@@ -42,4 +42,28 @@
     padding: 0.8rem 4rem;
     margin-top: 25px;
 
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .homeCar{
+        height: 50vh;
+    }
+    .content{
+        flex-direction: column;
+        margin-left: 0;
+        padding: 2rem;
+    }
+    .homeDetails{
+        flex-direction: column-reverse;
+        width: auto;
+        text-align: justify;
+    }
+    .homeDetailsPara{
+        margin-top: 0.8rem;
+    }
+    .localButton{
+        width: auto;
+    }
 }
