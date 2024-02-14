@@ -1,5 +1,5 @@
-import TextInput from "../../components/textInput/textInput";
-import "./inputs.css";
+import TextInput from "../../components/textInput/TextInput";
+import "./Inputs.css";
 const dictionary = { prompt: "Odometer", units: ["km", "m", "mm"] };
 const hehe = { prompt: "Fuel volume", units: ["ml", "l", "mm^3"] };
 
