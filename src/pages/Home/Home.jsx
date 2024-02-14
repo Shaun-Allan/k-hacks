@@ -1,17 +1,33 @@
 import { useNavigate } from "react-router-dom";
+import Header from "../../components/header/header";
+import "./Home.css";
+import { Button, Typography } from "antd";
 
 const Home = () => {
+  const { Title } = Typography;
   const navigate = useNavigate();
   return (
     <>
-      <div>Home page</div>
-      <button
-        onClick={() => {
-          navigate("/about");
-        }}
-      >
-        About
-      </button>
+      <Header className="header" />
+
+      <div className="content">
+        <img src="/home_car.png" alt="car" className="homeCar" />
+
+        <div className="homeDetails">
+          <Title level={3}>Car Simulator</Title>
+          <p>
+            This is car simulator that allows you to have real time car
+            simulation data
+          </p>
+          <Button
+            size={"large"}
+            className="localButton"
+            onClick={() => navigate("/inputs")}
+          >
+            Start Simulation
+          </Button>
+        </div>
+      </div>
     </>
   );
 };

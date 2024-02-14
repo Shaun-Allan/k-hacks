@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgb(4, 21, 36);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: "Segoe UI";
+  color: aliceblue;
+}
+
+.button {
+  background: rgb(6, 35, 60);
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    visibility: collapse;
+  }
+}

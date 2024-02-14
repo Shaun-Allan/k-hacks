@@ -1,0 +1,45 @@
+.header{
+    box-shadow: 0 3px 20px black;
+    position: relative;
+    z-index: 1;
+}
+
+.content{
+    background-color: rgb(242, 251, 250);
+    height: calc(100vh - 102px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -14rem;
+}
+
+.homeCar{
+    width: auto;
+    height: 30rem;
+    margin-left: -10rem;
+}
+
+.homeDetails{
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+}
+
+.homeDetails p{
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    line-height: 1.7rem;
+}
+
+.localButton{
+    font-size: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: rgb(7, 42, 71);
+    color: white;
+    width: fit-content;
+    padding: 0.8rem 4rem;
+    margin-top: 25px;
+
+}
