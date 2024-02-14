@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/header/header";
+import Header from "../../components/Header/Header";
 import "./Home.css";
 import { Button, Typography } from "antd";
 
