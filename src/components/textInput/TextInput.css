@@ -1,0 +1,28 @@
+.textinput{
+    background-color: aqua;
+    padding: 30px 10px ;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: start;
+    width: 100vh;
+    height: fit-content;
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    background-color: rgb(7, 42, 71);
+    color: aliceblue;
+}
+.option{
+    background-color: aliceblue;
+    color: aliceblue;
+    padding: 10px 10px;
+    
+    
+}
+.inputnumber{
+    
+    background-color: lightblue;
+    width: fit-content;
+}
