@@ -6,11 +6,7 @@ const { Option } = Select;
 
 const TextInput = ({ input }) => {
   const selectAfter = (
-    <Select
-      style={{
-        width: 60,
-      }}
-    >
+    <Select className="select">
       {input.units.map((u) => (
         <Option className="option" key={u} value={u}>
           {u}
