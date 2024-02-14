@@ -48,7 +48,8 @@
 
 @media screen and (max-width: 500px) {
     .homeCar{
-        height: 50vh;
+        height: auto;
+        width: 80vh;
     }
     .content{
         flex-direction: column;
