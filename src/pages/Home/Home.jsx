@@ -14,11 +14,13 @@ const Home = () => {
         <img src="/home_car.png" alt="car" className="homeCar" />
 
         <div className="homeDetails">
-          <Title level={3}>Car Simulator</Title>
-          <p>
-            This is car simulator that allows you to have real time car
-            simulation data
-          </p>
+          <div className="homeDetailsPara">
+            <Title level={3}>Car Simulator</Title>
+            <p>
+              This is car simulator that allows you to have real time car
+              simulation data
+            </p>
+          </div>
           <Button
             size={"large"}
             className="localButton"

@@ -19,7 +19,7 @@
   color: whitesmoke;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .buttons {
     visibility: collapse;
   }
