@@ -1,3 +1,4 @@
+
 import { Typography, Divider, Button } from "antd";
 import "./Inputs.css";
 import { useNavigate } from "react-router-dom";
@@ -12,11 +13,21 @@ import {
 } from "../../utils/inputs";
 import SliderInput from "../../components/Inputs/SliderInput/SliderInput";
 
+import TextInput from "../../components/textInput/TextInput";
+import SliderInput from "../../components/SliderInput/SliderInput";
+import "./Inputs.css";
+const dictionary = { prompt: "Odometer", units: ["km", "m", "mm"] };
+const hehe = { prompt: "Fuel volume", units: ["ml", "l", "mm^3"] };
+const batteryVoltage = { prompt: "Battery Voltage", units: ["V", "kV", "mV"] };
+const fuelLevel = { prompt: "Fuel level" };
+
+
 const Inputs = () => {
   const { Title } = Typography;
   const navigate = useNavigate();
   return (
     <>
+
       <div className="inputsPage">
         <h3 className="titleInputs">Configure</h3>
         <div className="inputsContent">
@@ -56,6 +67,22 @@ const Inputs = () => {
             Start Simulation
             <GiSteeringWheel className="steerIcon"/>
           </Button>
+
+      <div className="inputHeading">Inputs</div>
+      <div className="inputsContent">
+        <div>
+          <div className="subtitle">Diagnostics</div>
+          <div className="Diagnostics1">
+            <TextInput className="hi" key={dictionary} input={dictionary} />
+            <TextInput className="ho" key={hehe} input={hehe} />
+            <TextInput
+              className="he"
+              key={batteryVoltage}
+              input={batteryVoltage}
+            />
+            <SliderInput className="ha" key={fuelLevel} input={fuelLevel} />
+          </div>
+
         </div>
       </div>
     </>
