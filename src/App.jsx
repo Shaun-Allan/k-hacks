@@ -5,6 +5,7 @@ import {
 import Home from "./pages/Home/Home";
 import Inputs from "./pages/Inputs/Inputs";
 import NotFound from "./pages/NotFound/NotFound";
+import Simulation from "./pages/Simulation/Simulation";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/inputs",
     element: <Inputs />,
+  },
+  {
+    path: "/simulation",
+    element: <Simulation />,
   },
   {
     path: "*",
