@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import "./Home.css";
 import { Button, Typography } from "antd";
+import { GiSteeringWheel } from "react-icons/gi";
+import "./Particles.css";
 
 const Home = () => {
   const { Title } = Typography;
@@ -27,7 +29,27 @@ const Home = () => {
             onClick={() => navigate("/inputs")}
           >
             Start Simulation
+            <GiSteeringWheel className="steerIcon" />
           </Button>
+        </div>
+
+        
+        <div className="particles">
+          <div className="white">
+            <div className="squares">
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+              <div className="square"></div>
+            </div>
+          </div>
+          <div className="grey"></div>
         </div>
       </div>
     </>

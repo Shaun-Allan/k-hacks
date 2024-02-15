@@ -1,0 +1,27 @@
+.inputCard {
+  display: flex;
+  align-items: center;
+  background-color: rgb(29, 59, 80);
+  width: calc((100vw - 150px) / 2);
+  justify-content: space-between;
+  padding: 1.6rem 6%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  transition: ease-in-out 0.5s;
+}
+
+.inputCard:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+}
+
+.prompt {
+  font-family: Verdana;
+  font-size: 17px;
+  color: white;
+}
+
+.inputFieldContainer {
+  background-color: white;
+  border-radius: 10px;
+}

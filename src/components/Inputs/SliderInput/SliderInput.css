@@ -1,0 +1,3 @@
+.sliderInputFieldContainer {
+  width: calc((100vw - 300px) / 4);
+}

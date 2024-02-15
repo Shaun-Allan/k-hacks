@@ -1,70 +1,124 @@
-.header{
-    box-shadow: 0 3px 20px black;
-    position: relative;
-    z-index: 1;
+body {
+  background-color: rgb(242, 251, 250);
 }
 
-.content{
-    background-color: rgb(242, 251, 250);
-    min-height: calc(100vh - 102px);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: -14rem;
+.particles {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  right: 0;
+  bottom: 0;
 }
 
-.homeCar{
-    width: auto;
-    height: 30rem;
+.header {
+  box-shadow: 0 3px 20px black;
+  position: relative;
+  z-index: 1;
+  animation-name: slidedown;
+  animation-duration: 1s;
+}
+
+.content {
+  background-color: rgb(242, 251, 250);
+  min-height: calc(100vh - 102px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -14rem;
+}
+
+.homeCar {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  height: 30rem;
+  margin-left: -10rem;
+  animation-name: carLoader;
+  animation-duration: 0.7s;
+}
+
+.homeDetails {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  position: relative;
+  z-index: 1;
+}
+
+.homeDetails p {
+  font-family: "Segoe UI";
+  font-size: 17px;
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}
+
+.localButton {
+  font-size: 20px;
+  font-weight: 700;
+  height: fit-content;
+  background-color: rgb(7, 42, 71);
+  color: white;
+  width: fit-content;
+  padding: 0.8rem 3rem;
+  box-sizing: border-box;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.steerIcon {
+  height: auto;
+  width: 30px;
+  transition: ease-in 0.1s;
+}
+
+.localButton:hover {
+  .steerIcon {
+    transform: rotate(80deg);
+    transition: ease-in 0.1s;
+  }
+}
+
+@keyframes carLoader {
+  from {
+    margin-bottom: 120px;
+    margin-left: -50rem;
+  }
+  to {
+    margin-bottom: 0;
     margin-left: -10rem;
+  }
 }
 
-.homeDetails{
-    display: flex;
-    flex-direction: column;
-    width: 23rem;
+@keyframes slidedown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-
-.homeDetails p{
-    font-family: 'Segoe UI';
-    font-size: 17px;
-    line-height: 1.7rem;
-    margin-top: 1rem;
-}
-
-.localButton{
-    font-size: 20px;
-    font-weight: 700;
-    height: fit-content;
-    background-color: rgb(7, 42, 71);
-    color: white;
-    width: fit-content;
-    padding: 0.8rem 4rem;
-    margin-top: 25px;
-
-}
-
-
 
 @media screen and (max-width: 500px) {
-    .homeCar{
-        height: auto;
-        width: 80vh;
-    }
-    .content{
-        flex-direction: column;
-        margin-left: 0;
-        padding: 2rem;
-    }
-    .homeDetails{
-        flex-direction: column-reverse;
-        width: auto;
-        text-align: justify;
-    }
-    .homeDetailsPara{
-        margin-top: 0.8rem;
-    }
-    .localButton{
-        width: auto;
-    }
+  .homeCar {
+    height: auto;
+    width: 80vh;
+  }
+  .content {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 2rem;
+  }
+  .homeDetails {
+    flex-direction: column-reverse;
+    width: auto;
+    text-align: justify;
+  }
+  .homeDetailsPara {
+    margin-top: 0.8rem;
+  }
+  .localButton {
+    width: auto;
+  }
 }
